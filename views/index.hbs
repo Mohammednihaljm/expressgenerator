@@ -1,2 +1,25 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+{{!-- {{#each person}}
+
+<h1>{{@index}}.{{this}}</h1>
+{{/each}} --}}
+
+
+{{!-- <h2>{{message.name}}</h2>
+<h2>{{message.comments.comment}}</h2> --}}
+
+
+
+{{!-- {{#if person1.admin}}
+
+<h1>this is admin</h1>
+{{else}}
+<h1>this is not admin</h1>
+
+{{/if}} --}}
+
+{{#with message}}
+{{#with comments}}
+<h1>{{comment}}</h1>
+<h1>{{date}}</h1>
+{{/with}}
+{{/with}}
